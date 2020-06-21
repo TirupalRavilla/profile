@@ -928,7 +928,6 @@
                         <a href="#projects">Projects</a>
                         <a href="#social">Social</a>
                         <!-- <a href="#">Pricing</a> -->
-
                         <!-- <a href="#">Faq</a> -->
                         <a href="#contact">Contact</a>
                     </p>
@@ -957,7 +956,7 @@
     <script type="text/javascript">
         (function () {
             console.log('User Id: ${PROCESS.ENV.EMAIL_USER_ID}');
-            emailjs.init('${PROCESS.ENV.EMAIL_USER_ID}');
+            emailjs.init(process.env.EMAIL_USER_ID);
         })();
     </script>
 
